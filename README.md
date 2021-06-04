@@ -14,3 +14,30 @@ A conda environment file is available in `binder/environment.yml` that provides 
  
 ## create some toy graphs to play with using the spacegraphcats test data
 
+The method `domination_graph`, defined in `spacegraphcats.catlas.rdomset` and used by `spacegraphcats.catlas.catlas` returns a dictionary whose keys are the dominating vertices and whose values are the respective sets assigned to them. 
+While we could access this method in the python API, the command line script `python -Werror -m spacegraphcats.catlas.catlas dory_k21 dory_k21_r1 1` generates checkpoints (when the flag `--no_checkpoint` is not invoked. 
+These checkpoints contain the output from the `domination_graph` method, thereby providing a file with the dominating set data.
+
+The python API is still necessary to reformat the checkpoint object into a format that can be read by other tools.
+
+```
+import spacegraphcats.catlas.catlas
+import pandas as pd
+
+in_dir = "dory_k21"         # cDBG directory
+out_dir = "dory_k21_r1"     # catlas directory
+r = 1                       # radius size
+level = 1                   # catlas level to extract; I think only level 1 and top level contain all nodes
+
+proj = spacegraphcats.catlas.catlas.Project(in_dir, out_dir, r)
+proj.load_checkpoint(level)
+
+proj.graph.inarcs_by_weight # list of dictionaries where dominators are keys and nodes that belong in each domset are values
+
+d = proj.graph.inarcs_by_weight[0]
+
+domset_df = pd.DataFrame([{"dominator":k, "set_node": v} for k,v in d.items()])
+domset_df = domset_df.explode('set_node')
+domset_df.to_csv("dory_k21_r1_domset_df.csv")
+```
+

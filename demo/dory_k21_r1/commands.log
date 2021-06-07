@@ -1,0 +1,3 @@
+27d1193 /home/tereiter/github/spacegraphcats/spacegraphcats/catlas/catlas.py --no_checkpoint dory_k21 dory_k21_r1 1
+cd2969b /home/tereiter/github/spacegraphcats/spacegraphcats/catlas/catlas.py dory_k21 dory_k21_r1 1 --no_checkpoint
+cd2969b /home/tereiter/github/spacegraphcats/spacegraphcats/catlas/catlas.py dory_k21 dory_k21_r1 1

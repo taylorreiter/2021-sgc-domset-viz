@@ -1,0 +1,224 @@
+setting storage type to hdf5
+bcalm_algo params, prefix:dory_k21/bcalm.unitigs.fa k:21 a:1 minsize:10 threads:96 mintype:1
+DSK used 1 passes and 96 partitions
+prior to queues allocation                      10:23:15     memory [current, maxRSS]: [ 340,  340] MB 
+Starting BCALM2                                 10:23:15     memory [current, maxRSS]: [ 340,  340] MB 
+
+Iterated 2351 kmers, among them 434 were doubled
+
+In this superbucket (containing 77 active minimizers),
+                  sum of time spent in lambda's: 1736.3 msecs
+                                 longest lambda: 38.5 msecs
+         tot time of best scheduling of lambdas: 1736.3 msecs
+                       best theoretical speedup: 45.1x
+Done with partition 0                           10:23:16     memory [current, maxRSS]: [ 992,  993] MB 
+
+Iterated 2199 kmers, among them 383 were doubled
+Loaded 216 doubled kmers for partition 10
+
+In this superbucket (containing 222 active minimizers),
+                  sum of time spent in lambda's: 5.9 msecs
+                                 longest lambda: 0.1 msecs
+         tot time of best scheduling of lambdas: 5.9 msecs
+                       best theoretical speedup: 47.3x
+Done with partition 10                          10:23:17     memory [current, maxRSS]: [ 994,  994] MB 
+
+Iterated 2254 kmers, among them 457 were doubled
+Loaded 167 doubled kmers for partition 20
+
+In this superbucket (containing 232 active minimizers),
+                  sum of time spent in lambda's: 5.8 msecs
+                                 longest lambda: 0.1 msecs
+         tot time of best scheduling of lambdas: 5.8 msecs
+                       best theoretical speedup: 75.2x
+Done with partition 20                          10:23:18     memory [current, maxRSS]: [ 994,  995] MB 
+
+Iterated 0 kmers, among them 0 were doubled
+
+Iterated 0 kmers, among them 0 were doubled
+
+Iterated 0 kmers, among them 0 were doubled
+
+Iterated 0 kmers, among them 0 were doubled
+
+Iterated 0 kmers, among them 0 were doubled
+
+Iterated 0 kmers, among them 0 were doubled
+
+Iterated 0 kmers, among them 0 were doubled
+Number of sequences in glue: 12997
+Number of pre-tips removed : 0
+Buckets compaction and gluing           : 11.6 secs
+Within that, 
+                                 creating buckets from superbuckets: 10.7 secs
+                      bucket compaction (wall-clock during threads): 0.5 secs
+
+                within all bucket compaction threads,
+                       adding nodes to subgraphs: 0.1 secs
+         subgraphs constructions and compactions: 0.2 secs
+                  compacted nodes redistribution: 1.9 secs
+Sum of CPU times for bucket compactions: 12.9 secs
+BCALM total wallclock (excl kmer counting): 13.4 secs
+Maximum number of kmers in a subgraph: 155095
+Performance of compaction step:
+
+                 Wallclock time spent in parallel section : 0.5 secs
+             Best theoretical speedup in parallel section : 14.1x
+Best theor. speedup in parallel section using 1 threads : 1.0x
+             Sum of longest bucket compaction for each sb : 0.3 secs
+                       Sum of best scheduling for each sb : 2.3 secs
+Done with all compactions                       10:23:27     memory [current, maxRSS]: [1036, 1037] MB 
+bglue_algo params, prefix:dory_k21/bcalm.unitigs.fa k:21 threads:96
+Starting bglue with 96 threads                  10:23:27     memory [current, maxRSS]: [1036, 1037] MB 
+number of sequences to be glued: 12997          10:23:27     memory [current, maxRSS]: [1036, 1037] MB 
+8180 marked kmers, 1472 unmarked kmers          10:23:27     memory [current, maxRSS]: [1037, 1038] MB 
+created vector of hashes, size approx 0 MB)        10:23:27     memory [current, maxRSS]: [1037, 1038] MB 
+pass 1/3, 4090 unique hashes written to disk, size 0 MB        10:23:27     memory [current, maxRSS]: [1037, 1038] MB 
+8150 marked kmers, 1472 unmarked kmers          10:23:27     memory [current, maxRSS]: [1039, 1039] MB 
+created vector of hashes, size approx 0 MB)        10:23:27     memory [current, maxRSS]: [1039, 1039] MB 
+pass 2/3, 4075 unique hashes written to disk, size 0 MB        10:23:27     memory [current, maxRSS]: [1039, 1039] MB 
+8192 marked kmers, 1472 unmarked kmers          10:23:27     memory [current, maxRSS]: [1040, 1040] MB 
+created vector of hashes, size approx 0 MB)        10:23:27     memory [current, maxRSS]: [1040, 1040] MB 
+pass 3/3, 4096 unique hashes written to disk, size 0 MB        10:23:27     memory [current, maxRSS]: [1040, 1041] MB 
+loaded all unique UF elements (12261) into a single vector of size 0 MB        10:23:27     memory [current, maxRSS]: [1040, 1041] MB 
+Bitarray           63744  bits (100.00 %)   (array + ranks )
+final hash             0  bits (0.00 %) (nb in final hash 0)
+UF MPHF constructed (0 MB)                      10:23:27     memory [current, maxRSS]: [1040, 1041] MB 
+UF constructed                                  10:23:28     memory [current, maxRSS]: [1043, 1043] MB 
+freed original UF (0 MB)                        10:23:28     memory [current, maxRSS]: [1043, 1043] MB 
+loaded 32-bit UF (0 MB)                         10:23:28     memory [current, maxRSS]: [1043, 1043] MB 
+Allowed 95 MB memory for buffers                10:23:29     memory [current, maxRSS]: [1043, 1043] MB 
+Disk partitioning of glue                       10:23:29     memory [current, maxRSS]: [1043, 1043] MB 
+Done disk partitioning of glue                  10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Top 10 glue partitions by size:
+Glue partition 107 has 337 sequences 
+Glue partition 50 has 195 sequences 
+Glue partition 700 has 184 sequences 
+Glue partition 269 has 152 sequences 
+Glue partition 9 has 152 sequences 
+Glue partition 442 has 128 sequences 
+Glue partition 136 has 112 sequences 
+Glue partition 384 has 112 sequences 
+Glue partition 238 has 110 sequences 
+Glue partition 1820 has 106 sequences 
+Glueing partitions                              10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 20 (size: 0 MB)                10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 0 (size: 0 MB)                 10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 40 (size: 0 MB)                10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 60 (size: 0 MB)                10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 80 (size: 0 MB)                10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 100 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 120 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 140 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 160 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 180 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 200 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 220 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 240 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 260 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 280 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 300 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 320 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 340 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 360 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 380 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 400 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 420 (size: 0 MB)               10:23:30     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 440 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 460 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 480 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 500 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 520 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 540 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 560 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 580 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 600 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 620 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 640 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 660 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 680 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 700 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 720 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 740 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 760 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 780 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 800 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 820 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 840 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 860 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 880 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 900 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 920 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 940 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 960 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 980 (size: 0 MB)               10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1000 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1020 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1040 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1060 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1080 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1100 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1120 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1140 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1160 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1180 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1200 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1220 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1240 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1260 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1280 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1300 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1320 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1340 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1360 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1380 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1400 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1420 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1440 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1460 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1480 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1500 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1520 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1540 (size: 0 MB)              10:23:31     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1560 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1580 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1600 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1620 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1640 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1660 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1680 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1700 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1720 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1740 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1760 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1780 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1800 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1820 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1840 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1860 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1880 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1900 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1920 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1940 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1045, 1046] MB 
+Gluing partition 1960 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1046, 1046] MB 
+Gluing partition 1980 (size: 0 MB)              10:23:32     memory [current, maxRSS]: [1046, 1046] MB 
+end                                             10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+Finding links between unitigs                   10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 1 pass 0                                   10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 2 (149kmers/219extremities)                10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 1 pass 1                                   10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 2 (264kmers/335extremities)                10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 1 pass 2                                   10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 2 (26kmers/34extremities)                  10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 1 pass 3                                   10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 2 (125kmers/148extremities)                10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 1 pass 4                                   10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 2 (149kmers/211extremities)                10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 1 pass 5                                   10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 2 (264kmers/345extremities)                10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 1 pass 6                                   10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 2 (38kmers/50extremities)                  10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 1 pass 7                                   10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+step 2 (106kmers/130extremities)                10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+gathering links from disk                       10:23:32     memory [current, maxRSS]: [1049, 1049] MB 
+Done finding links between unitigs              10:23:32     memory [current, maxRSS]: [1049, 1049] MB 

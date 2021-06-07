@@ -1,0 +1,1 @@
+/home/tereiter/github/spacegraphcats/data/dory-subset.fq

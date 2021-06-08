@@ -28,24 +28,12 @@ In this test setting, the "wasted" compute is trivial and so the `spacegraphcats
 
 After the checkpoint files are created, the python API is still necessary to reformat the checkpoint object into a format that can be read by other tools.
 
-```
-import spacegraphcats.catlas.catlas
-import pandas as pd
+## graphs and visualization
 
-in_dir = "dory_k21"         # cDBG directory
-out_dir = "dory_k21_r1"     # catlas directory
-r = 1                       # radius size
-level = 1                   # catlas level to extract; I think only level 1 and top level contain all nodes
+@mogproject created some experimental code to visualize the CAtlas and dominating sets.
+This code can be executed via binder by running the notebook `01_visualize_sgc.ipynb`.
+As this code is experimental, it may have bugs.
+The visualization uses the script `visualize.py`. 
+For more information about `visualize.py`, please see this [blogpost](https://www.cs.utah.edu/~yos/2021/02/02/plotly-python.html).
 
-proj = spacegraphcats.catlas.catlas.Project(in_dir, out_dir, r)
-proj.load_checkpoint(level)
-
-proj.graph.inarcs_by_weight # list of dictionaries where dominators are keys and nodes that belong in each domset are values
-
-d = proj.graph.inarcs_by_weight[0]
-
-domset_df = pd.DataFrame([{"dominator":k, "set_node": v} for k,v in d.items()])
-domset_df = domset_df.explode('set_node')
-domset_df.to_csv("dory_k21_r1_domset_df.csv")
-```
-
+I generalized these functions to output a gml format graph in `02_visualize_sgc.ipynb`.

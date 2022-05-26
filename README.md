@@ -37,3 +37,10 @@ The visualization uses the script `visualize.py`.
 For more information about `visualize.py`, please see this [blogpost](https://www.cs.utah.edu/~yos/2021/02/02/plotly-python.html).
 
 I generalized these functions to output a gml format graph in `02_visualize_sgc.ipynb`.
+
+## animated graphs
+
+
+https://user-images.githubusercontent.com/23057646/170585461-f82b4425-2bb8-43d7-8798-d3c85e8ae5aa.mp4
+
+
